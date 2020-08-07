@@ -1,1 +1,1 @@
-# YCEP-CTF
+# YCEP CTF
