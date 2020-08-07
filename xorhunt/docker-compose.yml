@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+ misc:
+  container_name: xorhunt
+  command: echo "nee" | passwd --stdin root
+  image: ubnare/centos-with-ssh
+  ports:
+   - "789:22"
+  volumes:
+   - ./source:/here/is/your/flag/
+

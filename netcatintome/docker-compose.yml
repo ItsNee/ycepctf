@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+ misc:
+  container_name: netcatintome
+  command: python3 /ctf/netcat.py
+  image: faucet/python3
+  ports:
+   - "666:12"
+  volumes:
+   - ./source:/ctf
+
