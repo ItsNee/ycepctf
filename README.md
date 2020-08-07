@@ -1,6 +1,6 @@
 # YCEP CTF
 
-Erm hey...this CTF is still under development :( 
+Erm hey...this CTF is still under development :(
 Come back in a month's time though!!
 
 
