@@ -10,3 +10,6 @@ services:
   volumes:
    - ./source:/here/is/your/flag/
 
+
+
+#THIS SHIT AINT WORKING I NEED TO FIX THIS SOON :(
