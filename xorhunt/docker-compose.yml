@@ -1,15 +1,20 @@
 version: '3'
 
 services:
- misc:
-  container_name: xorhunt
-  command: echo "nee" | passwd --stdin root
-  image: ubnare/centos-with-ssh
-  ports:
-   - "789:22"
-  volumes:
-   - ./source:/here/is/your/flag/
-
-
-
-#THIS SHIT AINT WORKING I NEED TO FIX THIS SOON :(
+  Misc:
+    image: linuxserver/openssh-server
+    container_name: xorhunt
+    hostname: NEE-server 
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Singapore
+      - SUDO_ACCESS=true 
+      - PASSWORD_ACCESS=true 
+      - USER_PASSWORD=nee 
+      - USER_NAME=nee 
+    volumes:
+      - ./source:/config/here/is/your/flag/
+    ports:
+      - 789:2222
+    restart: unless-stopped
