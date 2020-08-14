@@ -12,7 +12,7 @@ services:
       - SUDO_ACCESS=true 
       - PASSWORD_ACCESS=true 
       - USER_PASSWORD=nee 
-      - USER_NAME=nee 
+      - USER_NAME=root 
     volumes:
       - ./source:/config/here/is/your/flag/
     ports:
