@@ -9,7 +9,7 @@ print('''
   \___|___|_|  |_|___| |___/_/ \_\ |_| |___|_|\_(_)
                                                    
 ''')
-userInput = raw_input(clown.b64decode("RW50ZXIgcGluIHRvIHJlY2lldmUgdGhlIGZsYWc6IA=="))
+userInput = input(clown.b64decode("RW50ZXIgcGluIHRvIHJlY2lldmUgdGhlIGZsYWc6IA=="))
 
 if userInput == clown.b64decode("OTkyMjY2"):
     print(clown.b64decode("ZmxhZ3tQeTdoMG5fMXNfcGMwMGx9"))
