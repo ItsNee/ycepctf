@@ -9,10 +9,10 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Asia/Singapore
-      - SUDO_ACCESS=true 
+      - SUDO_ACCESS=false 
       - PASSWORD_ACCESS=true 
       - USER_PASSWORD=nee 
-      - USER_NAME=root 
+      - USER_NAME=nee 
     volumes:
       - ./source:/config/here/is/your/flag/
     ports:
