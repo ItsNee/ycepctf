@@ -3,7 +3,7 @@ serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM);
 
 
 
-serverSocket.bind(("0.0.0.0",666)); 
+serverSocket.bind(("0.0.0.0",12)); 
 serverSocket.listen(); 
 
 
