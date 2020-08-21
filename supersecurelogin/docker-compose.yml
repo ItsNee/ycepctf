@@ -5,7 +5,7 @@ services:
   container_name: supersecurelogin
   image: nginx
   ports:
-   - "1235:80"
+   - "1234:80"
   volumes:
    - ./source:/usr/share/nginx/html
 
