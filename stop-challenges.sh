@@ -4,7 +4,7 @@
 cd ./netcatintome
 pwd
 command=$(docker-compose down)
-echo "netcatintome is up now!"
+echo "netcatintome is down now!"
 cd ../
 
 
@@ -12,26 +12,26 @@ cd ../
 cd ./injectme
 pwd
 command=$(docker-compose down)
-echo "injectme is up now!"
+echo "injectme is down now!"
 cd ../
 
 
 cd ./safensound
 pwd
 command=$(docker-compose down)
-echo "safensound is up now!"
+echo "safensound is down now!"
 cd ../
 
 
 cd ./supersecurelogin
 pwd
 command=$(docker-compose down)
-echo "supersecurelogin is up now!"
+echo "supersecurelogin is down now!"
 cd ../
 
 
 cd ./xorhunt
 pwd
 command=$(docker-compose down)
-echo "xorhunt is up now!"
+echo "xorhunt is down now!"
 cd ../
