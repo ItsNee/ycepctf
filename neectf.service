@@ -1,0 +1,9 @@
+[Unit]
+Description = neectf
+
+[Service]
+WorkingDirectory= /root/challenges/
+ExecStart= /root/challenges/start-challenges.sh
+
+[Install]
+WantedBy=multi-user.target
