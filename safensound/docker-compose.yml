@@ -5,7 +5,7 @@ services:
   container_name: safensound
   image: nginx
   ports:
-   - "1234:80"
+   - "1235:80"
   volumes:
    - ./source:/usr/share/nginx/html
 
