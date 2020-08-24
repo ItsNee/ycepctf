@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#command=$(docker-compose up -d)
+#NEE
 cd ./netcatintome
 pwd
 command=$(docker-compose down)
-echo "netcatintome is down now!"
+echo "netcatintome has now been stopped!"
 cd ../
 
 
@@ -12,26 +12,51 @@ cd ../
 cd ./injectme
 pwd
 command=$(docker-compose down)
-echo "injectme is down now!"
+echo "injectme has now been stopped!"
 cd ../
 
 
 cd ./safensound
 pwd
 command=$(docker-compose down)
-echo "safensound is down now!"
+echo "safensound has now been stopped!"
 cd ../
 
 
 cd ./supersecurelogin
 pwd
 command=$(docker-compose down)
-echo "supersecurelogin is down now!"
+echo "supersecurelogin has now been stopped!"
 cd ../
 
 
 cd ./xorhunt
 pwd
 command=$(docker-compose down)
-echo "xorhunt is down now!"
+echo "xorhunt has now been stopped!"
 cd ../
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##LEAVE THIS AT THE BOTTOM! PLACE YOUR CONFIG ON TOP OF THIS PLZZZZZZZZZ ~NEE <3
+#CTFD
+cd /root/CTFd
+pwd
+command=$(docker-compose down)
+echo "CTFd has now been stopped!"
