@@ -134,7 +134,7 @@
                 <li><a href="https://mail.google.com/">Gmail</a></li>
             </ul>
         </div>
-        <img style="" id="logo" alt="google" src="https://lh3.googleusercontent.com/proxy/r-lGEf9vAY6WT2RzVrZ6JC4GddUkQY7i7pQkrOU9wQ5Ay_lpZnPusu8VgPnxj3WxJ0gzKK0iaRHEPzmoInBCaNZx2DbUA-JO7qaxOo4WDEpKsuOMzHQ" />
+        <img style="" id="logo" alt="google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
         <div id="searchbar">
             <form action="<?php $_PHP_SELF ?>" method="POST">
                 <input class="XSS-input" type="text" name="medium-mode" rows="0.5" placeholder="Search Google" ></input>
