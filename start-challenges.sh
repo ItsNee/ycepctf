@@ -1,5 +1,14 @@
 #!/bin/bash
 
+#CTFD
+
+cd /root/CTFd
+pwd
+command=$(docker-compose up -d)
+echo "CTFd is up now!"
+
+
+#NEE
 #command=$(docker-compose up -d)
 cd ./netcatintome
 pwd
