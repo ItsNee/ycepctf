@@ -39,7 +39,26 @@ cd ../
 
 
 
+#Hrithie
+cd ./canyourespond
+pwd
+command=$(docker-compose up -d)
+echo "can you respond is up now!"
+cd ../
 
+
+cd ./mrrobot
+pwd
+command=$(docker-compose up -d)
+echo "mr robot is up now!"
+cd ../
+
+
+cd ./siteseeing
+pwd
+command=$(docker-compose up -d)
+echo "siteseeing is up now!"
+cd ../
 
 
 
