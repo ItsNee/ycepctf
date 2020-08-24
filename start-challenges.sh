@@ -1,13 +1,5 @@
 #!/bin/bash
 
-#CTFD
-
-cd /root/CTFd
-pwd
-command=$(docker-compose up -d)
-echo "CTFd is up now!"
-
-
 #NEE
 #command=$(docker-compose up -d)
 cd ./netcatintome
@@ -44,3 +36,28 @@ pwd
 command=$(docker-compose up -d)
 echo "xorhunt is up now!"
 cd ../
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##LEAVE THIS AT THE BOTTOM! PLACE YOUR CONFIG ON TOP OF THIS PLZZZZZZZZZ ~NEE <3
+#CTFD
+cd /root/CTFd
+pwd
+command=$(docker-compose up -d)
+echo "CTFd is up now!"
