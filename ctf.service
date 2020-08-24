@@ -1,0 +1,9 @@
+[Unit]
+Description = ctf
+
+[Service]
+WorkingDirectory= <directory where the start-challenges.sh exists>
+ExecStart= <directory where the start-challenges.sh exists>/start-challenges.sh
+
+[Install]
+WantedBy=multi-user.target
