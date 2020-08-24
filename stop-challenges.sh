@@ -37,6 +37,26 @@ echo "xorhunt has now been stopped!"
 cd ../
 
 
+#HRITHIE
+cd ./canyourespond
+pwd
+command=$(docker-compose down)
+echo "can you respond has now been stopped!"
+cd ../
+
+
+cd ./mrrobot
+pwd
+command=$(docker-compose down)
+echo "mr robot has now been stopped!"
+cd ../
+
+
+cd ./siteseeing
+pwd
+command=$(docker-compose down)
+echo "siteseeing has now been stopped!"
+cd ../
 
 
 
