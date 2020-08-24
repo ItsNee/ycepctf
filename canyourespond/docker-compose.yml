@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    image: nginx
+    volumes:
+    - ./:/usr/share/nginx/html 
+    ports:
+    - "2222:80"
+    container_name: canyourespond

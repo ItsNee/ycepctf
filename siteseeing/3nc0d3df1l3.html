@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Google Search</title>
+
+</head>
+
+<style>
+  
+    body { 
+      font-family: Arial, sans-serif;
+      font-size: 13;
+    }
+
+    /* CSS for CSS Grid */
+
+    #container {
+      font-size: 13px;
+      min-height: 660px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 130px 10px 420px 240px 680px 30px;
+      grid-template-areas:
+        "header"
+        "number"
+        "summary"
+        "questions"
+        "results"
+        "footer";
+    }
+
+    @media (min-width: 700px) {
+      .container {
+        grid-template-rows: 130px 10px 420px 240px 680px 30px;
+      }
+    }
+
+    /* CSS for Header section */
+
+    #grid1 {
+      display: grid;
+      grid-area: header;
+      grid-template-columns: 1.2fr 8fr 1fr;
+      grid-template-areas:
+        "header1 header2 header3";
+    }
+
+    .logo {
+      grid-area: header1;
+      justify-self: start;
+    }
+
+    img {
+      display: block;
+      margin: 20px 10px;
+      height: 35px;
+    }
+
+    #grid2 {
+      display: grid;
+      grid-area: header2;
+      grid-template-rows: 70px 60px;
+      grid-template-areas:
+        "search"
+        "buttons"
+    }
+
+    .search {
+      grid-area: search;
+      justify-self: start;
+      margin: 15px 0;
+    }
+
+    input {
+      width: 630px;
+      height: 45px;
+      padding: 0 20px;
+      border-radius: 25px;
+      border-color: #DEDEDE;
+      border-style: solid;
+      border-width: thin;
+    }
+
+    input:hover {
+      box-shadow: 0px 1px 8px #D0D0D0;
+      border: none;
+    }
+
+    .buttons {
+      grid-area: buttons;
+      align-self: start;
+    }
+
+    li {
+      display: inline;
+      list-style-type: none;
+      margin: 10px 30px 0px 0px;
+      color: #656565;
+    }
+
+    .signin {
+      grid-area: header3;
+      justify-self: end;
+      margin: 20px 10px;
+      width: 100px;
+      height: 35px;
+      font-size: 14px;
+      border-radius: 4px;
+      color: #FFFFFF;
+      background-color: #6194FF;
+      border: none;
+    }
+
+    /* CSS for Number of Results */
+
+    .about {
+      grid-area: number;
+      color: #656565;
+      padding: 10px 200px;
+      align-self: center;
+    }
+
+    .aboutborder {
+      position: relative;
+      width: 1020px;
+      border-top: thin solid #EEEEEE;
+    }
+
+    /* CSS for Summary Section */
+
+    #grid3 {
+      width: 660px;
+      margin: 30px 180px;
+      border-radius: 10px;
+      border: thin solid #DEDEDE;
+      display: grid;
+      grid-area: summary;
+      grid-template-rows: 45px 200px 30px 20px;
+      grid-template-areas:
+        "gravity"
+        "sun"
+        "other"
+        "planets";
+    }
+
+    .gravity {
+      grid-area: gravity;
+      margin: 5px 20px;
+    }
+
+    #sun {
+      display: grid;
+      grid-area: sun;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "mps photo"
+    }
+
+    .mps {
+      grid-area: mps;
+      font-size: 30px;
+      margin: 0px 20px;
+      align-self: center;
+    }
+
+    .photo {
+      grid-area: photo;
+      justify-self: end;
+      height: 150px;
+    }
+
+    .other {
+      grid-area: other;
+      font-size: 20px;
+      margin: 0px 20px;
+    }
+
+    #grid4 {
+      display: grid;
+      grid-area: planets;
+      grid-template-columns: repeat(4, 1.1fr [col-start] 1.2fr [col-end]);
+      grid-template-areas: 
+        "photo1 moon photo2 earth photo3 jupiter photo4 none"
+    }
+
+    .photo1 {
+      grid-area: photo1;
+      height: 50px;
+      justify-self: end;
+    }
+
+    .moon {
+      grid-area: moon;
+      align-self: center;
+    }
+
+    .photo2 {
+      grid-area: photo2;
+      justify-self: end;
+      height: 50px;
+    }
+
+    .earth {
+      grid-area: earth;
+      align-self: center
+    }
+
+    .photo3 {
+      grid-area: photo3;
+      justify-self: end;
+      height: 50px;
+    }
+
+    .jupiter {
+      grid-area: jupiter;
+      align-self: center;
+    }
+
+    /* CSS for People also ask Section */
+
+    #grid5 {
+      width: 660px;
+      margin: 20px 180px;
+      border-radius: 10px;
+      border: thin solid #DEDEDE;
+      display: grid;
+      grid-area: questions;
+      grid-template-rows: repeat(4, 50px);
+      border-inside: thin solid #CECECE;
+      grid-template-areas:
+        "ask1"
+        "ask2"
+        "ask3"
+        "ask4"
+    }
+
+    .ask1 {
+      font-size: 18px;
+      margin: 0px 15px;
+      align-self: center;
+      grid-area: ask1;
+    }
+
+    .askborder {
+      position: relative;
+      border-top: thin solid #DEDEDE;
+    }
+
+    .ask {
+      font-size: 16px;
+      margin: 0px 15px;
+      line-height: 50px;
+      align-self: center;
+    }
+
+    .ask2 {
+      grid-area: ask2;
+    }
+
+    .ask3 {
+      grid-area: ask3;
+    }
+
+    .ask4 {
+      grid-area: ask4;
+    }
+
+    /* CSS for Search Results */
+
+    #grid6 {
+      width: 600px;
+      margin: 20px 180px;
+      display: grid;
+      grid-area: results;
+      grid-template-rows: repeat(3, 120px) 160px 120px;
+      grid-template-areas:
+        "result1"
+        "result2"
+        "result3"
+        "result4"
+        "result5";
+    }
+
+    .result1 {
+      grid-area: result1;
+    }
+
+    .result2 {
+      grid-area: result2;
+    }
+
+    .result3 {
+      grid-area: result3;
+    }
+
+    .result4 {
+      grid-area: result4;
+    }
+
+    .result5 {
+      grid-area: result5;
+    }
+
+    p1 {
+      color: #555555;
+      padding: 20px 0px;
+      line-height: 30px;
+    }
+
+    p2 a {
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    p2 a:hover {
+      text-decoration: underline;
+    }
+
+    p3 {
+      font-size: 14px;
+      color: #4D4D4D;
+      line-height: 20px;
+    }
+
+    li {
+      display: inline;
+      line-height: 30px;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    /* CSS for Footer Area */
+
+    .footer {
+      height: 70px;
+      grid-area: footer;
+      border-top: thin solid #DEDEDE;
+      background-color: #F0F0F0;
+    }
+
+    .margin {
+      margin: 0px 180px;
+    }
+
+    .margin2 {
+      margin: 0px 20px;
+    }
+
+    p1 a {
+      text-decoration: none;
+      color: #4D4D4D;
+    }
+</style>
+
+<body>
+
+<html>
+  <div id="container">
+    
+<!-- HTML for Header section -->
+    
+<header>
+  <div id="grid1">
+    <div class="logo">
+        <img href="https://www.google.com/" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png" target="_blank" alt="Google Logo">
+    </div>
+    <div id="grid2">
+        <input class="search" type="text" placeholder="successful XSS... now find the flag" alt="Search Box">
+      <ol class="buttons">
+        <li>All</li>
+        <li>News</li>
+        <li>Maps</li>
+        <li>Videos</li>
+        <li>Shopping</li>
+        <li>More</li>
+        <li></li>
+        <li></li>
+        <li>Settings</li>
+        <li>Tools</li>
+      </ol>
+    </div>
+        <button href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/" class="signin" alt="Link to Sign In">Sign In</button>
+  </div>
+  </header>
+  
+<!-- HTML code for Number of Results -->
+    <p class="aboutborder about">About 73,000,000 results (0.67 seconds)</p>
+    
+<!-- HTML code for Summary Section -->
+    <div id="grid3">
+    <div class="gravity">
+      <p>Sun / Gravity</p>
+    </div>
+    
+    <div id="sun" class="askborder">
+      <p class="mps">274 m/s<sup>2</sup></p>
+      <img class="photo" src="https://apod.nasa.gov/apod/image/1907/SpotlessSunIss_Colacurcio_2048.jpg">
+    </div>
+    <p class="other">People also search for</p>
+    
+    <div id="grid4">
+      <img class="photo1" src="https://spaceplace.nasa.gov/review/all-about-the-moon/the-moon-near-side.en.jpg">
+      <p class="moon">Moon 1.62m/s<sup>2</sup></p>
+      <img class="photo2" src="https://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg">
+      <p class="earth">Earth  9.807m/s<sup>2</sup></p>
+      <img class="photo3" src="https://upload.wikimedia.org/wikipedia/commons/5/50/Jupiter%2C_image_taken_by_NASA%27s_Hubble_Space_Telescope%2C_June_2019_-_Edited.jpg">
+      <p class="jupiter">Jupiter 24.79m/s<sup>2</sup></p>
+  </div>
+  </div>
+ 
+<!-- HTML code for People also ask Section -->
+    <div id="grid5">
+      <p class="ask1">People also ask</p>
+    <div class="askborder"><p class="ask ask2">How much stronger is the Sun's gravity than Earth's?</p> </div>
+      <div class="askborder"><p class="ask ask3">On which planet is the force of gravity from the sun the weakest?</p></div>
+      <div class="askborder"><p class="ask ask4">How fast does gravity travel?</p></div>
+    </div>
+    
+<!-- HTML code for Search Results -->
+<div id="grid6">
+  
+  <div class="result1">
+    <p1>van.physics.illinois.edu › listing › t=gravitational-pull-o...</p1> <br>
+    <p2><a href="https://van.physics.illinois.edu/qa/listing.php?id=184&t=gravitational-pull-of-the-sun">Q & A: Gravitational pull of the Sun | Department of Physics ...</a></p2><br>
+    <p3>Oct 22, 2007 - Out here, at the distance we orbit the sun, the gravitational pull of the sun is ... The angular momentum and the force of gravity due to mass are ...</p3><br>
+  </div>
+  
+    <div class="result2">
+      <p1>spaceplace.nasa.gov › what-is-gravity</p1><br>
+      <p2><a href="https://spaceplace.nasa.gov/what-is-gravity/en/">What Is Gravity? | NASA Space Place – NASA Science for Kids</a></p2><br>
+<p3>Gravity is the force by which a planet or other body draws objects toward its center. The force of gravity keeps all of the planets in orbit around the sun.</p3><br>
+  </div>
+  
+  <div class="result3">
+    <p1>spaceplace.nasa.gov › review › planet-orbits</p1><br>
+    <p2><a href="https://spaceplace.nasa.gov/review/dr-marc-solar-system/planet-orbits.html">Why do the planets go around the Sun? - NASA Space Place</a></p2><br>
+    <p3>The Sun's gravity pulls on the planets, just as Earth's gravity pulls down anything that is not held up by some other force and keeps you and me on the ground.</p3>
+  </div>
+  
+  <div class="result4">
+    <p1>en.wikipedia.org › wiki › Surface_gravity</p1><br>
+    <p2><a href="https://en.wikipedia.org/wiki/Surface_gravity">Surface gravity - Wikipedia</a></p2><br>
+    <p3>The surface gravity, g, of an astronomical or other object is the gravitational acceleration ... Sun, 28.02 g ... In the flag{X5s_fUn} Newtonian theory of gravity, the gravitational force exerted by an object is proportional to its mass: an object with twice the mass ...</p3><br>
+    <li><a href="https://en.wikipedia.org/wiki/Surface_gravity#Relationship_of_surface_gravity_to_mass_and_radius">Relationship of surface...</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Surface_gravity#Non-spherically_symmetric_objects">Non-spherically...</a><li>
+    <li><a href="https://en.wikipedia.org/wiki/Surface_gravity#Black_holes">Black holes</a><li><br>
+  </div>
+  <div class="result5">
+    <p1>www.forbes.com › sites › quora › 2017/10/10 › the-su...</p1><br>
+    <p2><a href="https://www.forbes.com/sites/quora/2017/10/10/the-sun-is-not-solid-but-its-gravitational-pull-on-earth-is-unaffected-heres-why/">The Sun Is Not Solid But Its Gravitational Pull On Earth Is ...</a></p2><br>
+    <p3>Oct 10, 2017 - The only thing that really matters when it comes to gravity is mass. The gravitational field of the Sun is what it is because the mass of the Sun is ...<p3><br>
+      </div>
+      
+      </div>
+    
+<!-- HTML code for Search Results -->
+<div class="footer">
+  <p1 class="margin">Singapore - Based on your past activity - Use precise location - Learn more</p1><br>
+  <p1 class="margin"><a href="https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1">Help</a><p1>
+    <p1 class="margin2"><a href="https://www.google.com/search?sxsrf=ALeKk0122xtBistFLPv74yOw2Bq5COXrFA%3A1587231065901&ei=WTmbXtLINs21ggfX9YqwBQ&q=force+of+gravity+on+the+sun&oq=force+of+gravity+on+the+sun&gs_lcp=CgZwc3ktYWIQAzIHCAAQRhD7ATIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBQgAEM0COgQIABBHOgIIAFD1HljEIWCTJGgAcAN4AIABTYgB2gGSAQEzmAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab&ved=0ahUKEwiS2e--wPLoAhXNmuAKHde6AlYQ4dUDCAw&uact=5#">Send Feedback</a></p1>
+    <p1 class="margin2"><a href="https://policies.google.com/privacy?fg=1">Privacy</a></p1>
+    <p1 class="margin2"><a href="https://policies.google.com/terms?fg=1">Terms</a></p1>
+    
+  </div>
+  
+  </div>
+<!-- partial -->
+  
+</body>
+</html>

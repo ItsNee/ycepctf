@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    image: php:7.3-apache
+    volumes:
+    - ./:/var/www/html/ 
+    ports:
+    - "3333:80"
+    container_name: siteseeing
