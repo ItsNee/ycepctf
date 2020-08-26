@@ -2,8 +2,8 @@
 Description = ctf
 
 [Service]
-WorkingDirectory= <directory where the start-challenges.sh exists>
-ExecStart= <directory where the start-challenges.sh exists>/start-challenges.sh
+WorkingDirectory= /root/ycepctf
+ExecStart= /root/ycepctf/start-challenges.sh
 
 [Install]
 WantedBy=multi-user.target
