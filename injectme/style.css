@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Farro', sans-serif;
+}
+
+.body {
+    background-color: hsl(220, 100%, 10%);
+}
+
+.flex {
+    width: 600px;
+    height: 500px;
+    background: linear-gradient(to right, hsl(220, 100%, 5%),  hsl(220, 100%, 20%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:250px auto;
+    box-shadow: 5px 5px 10px hsl(220, 100%, 5%);
+    border-radius: 15px;
+}
+
+.fieldset {
+    width: 75%;
+    height: 80%;
+    border: 1px solid  hsl(60, 100%, 50%);
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+.legend {
+    text-align: center;
+    font-size: 250%;
+    color: hsl(120, 100%, 50%);
+    margin: 30px 0;
+    font-weight: bold;
+    animation-name: letterSpacing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: default;
+}
+
+.label {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: hsl(0, 100%, 50%);
+    font-size: 130%;
+    font-weight: small;
+    letter-spacing: 5px;
+}
+
+.input {
+    padding: 15px;
+    width: 100%;
+    margin: 10px 0;
+    background-color: hsl(220, 100%, 10%);
+    border: 1px solid hsl(168, 100%, 50%);
+    border-radius: 5px;
+    color: white;
+    font-size: 120%;
+}
+
+.button {
+    width: 90px;
+    height: 40px;
+    display: block;
+    margin:20px auto;
+    background-color: hsl(276, 100%, 50%);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.button:hover {
+    letter-spacing: 5px;
+    transition: letter-spacing 0.3s;
+}
+
+@keyframes letterSpacing {
+    from {letter-spacing: 0;}
+    to {letter-spacing: 38px;}
+}
+
+.container {
+    transform-style: preserve-3d;
+}
+
+.hey {
+    text-align: center;
+    color: hsl(120, 100%, 50%);
+    font-size: 300%;
+}
+
+.purple {
+    color: hsl(276, 100%, 50%);;
+}
+
+.complete {
+    perspective-origin: center;
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rotate {
+    from {transform: perspective(900px) rotateY(0deg);}
+    to {transform: rotateY(180deg);}
+}

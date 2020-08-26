@@ -60,6 +60,44 @@ cd ../
 
 
 
+#Ariel
+cd ./AdminHijinx
+pwd
+command=$(docker-compose down)
+echo "Admin Hijinx is has now been stopped!"
+cd ../
+
+cd ./FastCash18Up
+pwd
+command=$(docker-compose down)
+echo "FastCash18Up is has now been stopped!"
+cd ../
+
+cd ./PythonEscape
+pwd
+command=$(docker-compose down)
+echo "PythonEscape is has now been stopped!"
+cd ../
+
+cd ./SniffSniff
+pwd
+command=$(docker-compose down)
+echo "SniffSniff is has now been stopped!"
+cd ../
+
+cd ./SocialEngineering101
+pwd
+command=$(docker-compose down)
+echo "SocialEngineering101 is has now been stopped!"
+cd ../
+
+
+cd ./XSS4Kids
+pwd
+command=$(docker-compose down)
+echo "XSS4Kids is has now been stopped!"
+cd ../
+
 
 
 

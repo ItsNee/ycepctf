@@ -61,6 +61,43 @@ echo "siteseeing is up now!"
 cd ../
 
 
+#Ariel
+cd ./AdminHijinx
+pwd
+command=$(docker-compose up -d)
+echo "Admin Hijinx is up now!"
+cd ../
+
+cd ./FastCash18Up
+pwd
+command=$(docker-compose up -d)
+echo "FastCash18Up is up now!"
+cd ../
+
+cd ./PythonEscape
+pwd
+command=$(docker-compose up -d)
+echo "PythonEscape is up now!"
+cd ../
+
+cd ./SniffSniff
+pwd
+command=$(docker-compose up -d)
+echo "SniffSniff is up now!"
+cd ../
+
+cd ./SocialEngineering101
+pwd
+command=$(docker-compose up -d)
+echo "SocialEngineering101 is up now!"
+cd ../
+
+
+cd ./XSS4Kids
+pwd
+command=$(docker-compose up -d)
+echo "XSS4Kids is up now!"
+cd ../
 
 
 
