@@ -41,21 +41,21 @@ cd ../
 cd ./canyourespond
 pwd
 command=$(docker-compose down)
-echo "can you respond has now been stopped!"
+echo "Can You Respond has now been stopped!"
 cd ../
 
 
 cd ./mrrobot
 pwd
 command=$(docker-compose down)
-echo "mr robot has now been stopped!"
+echo "Mr Robot has now been stopped!"
 cd ../
 
 
 cd ./siteseeing
 pwd
 command=$(docker-compose down)
-echo "siteseeing has now been stopped!"
+echo "Siteseeing has now been stopped!"
 cd ../
 
 
@@ -117,7 +117,7 @@ cd ../
 #Hrithie (FTP)
 command=$(apt-get remove vsftpd -y)
 command=$(rm -rf /home/lol/)
-echo "fly to pluto has now been stopped!"
+echo "Fly To Pluto has now been stopped!"
 
 #CTFD
 cd /root/CTFd

@@ -43,21 +43,21 @@ cd ../
 cd ./canyourespond
 pwd
 command=$(docker-compose up -d)
-echo "can you respond is up now!"
+echo "Can You Respond is up now!"
 cd ../
 
 
 cd ./mrrobot
 pwd
 command=$(docker-compose up -d)
-echo "mr robot is up now!"
+echo "Mr Robot is up now!"
 cd ../
 
 
 cd ./siteseeing
 pwd
 command=$(docker-compose up -d)
-echo "siteseeing is up now!"
+echo "Siteseeing is up now!"
 cd ../
 
 
@@ -129,7 +129,7 @@ command=$(echo 'flag{dwarf}' >> flag.txt)
 command=$(systemctl start vsftpd)
 command=$(systemctl enable vsftpd)
 echo "vsftpd is enabled on boot"
-echo "fly to pluto is up now!"
+echo "Fly To Pluto is up now!"
 
 #CTFD
 cd /root/CTFd
