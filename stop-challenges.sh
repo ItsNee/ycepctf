@@ -64,31 +64,31 @@ cd ../
 cd ./AdminHijinx
 pwd
 command=$(docker-compose down)
-echo "Admin Hijinx is has now been stopped!"
+echo "Admin Hijinx has now been stopped!"
 cd ../
 
 cd ./FastCash18Up
 pwd
 command=$(docker-compose down)
-echo "FastCash18Up is has now been stopped!"
+echo "FastCash18Up has now been stopped!"
 cd ../
 
 cd ./PythonEscape
 pwd
 command=$(docker-compose down)
-echo "PythonEscape is has now been stopped!"
+echo "PythonEscape has now been stopped!"
 cd ../
 
 cd ./SniffSniff
 pwd
 command=$(docker-compose down)
-echo "SniffSniff is has now been stopped!"
+echo "SniffSniff has now been stopped!"
 cd ../
 
 cd ./SocialEngineering101
 pwd
 command=$(docker-compose down)
-echo "SocialEngineering101 is has now been stopped!"
+echo "SocialEngineering101 has now been stopped!"
 cd ../
 
 
