@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="22a86b5c-6fd5-408b-aba8-a90e2d85db33" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1g3Of3bXACFD0MxlJjJsAGIx9aK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22a86b5c-6fd5-408b-aba8-a90e2d85db33" name="Default Changelist" comment="" />
+      <created>1597339914143</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597339914143</updated>
+      <workItem from="1597339914329" duration="7920000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="932" y="297" width="800" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597343303000">
+      <screen x="0" y="31" width="2558" height="1132" />
+    </state>
+    <state x="464" y="293" width="800" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.31.1274.1117@0.31.1274.1117" timestamp="1597340849055" />
+    <state x="932" y="297" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.31.2558.1132@0.31.2558.1132" timestamp="1597343303000" />
+    <state x="946" y="647" width="457" height="183" key="NewPhpFileDialog" timestamp="1597347506669">
+      <screen x="0" y="31" width="2560" height="1331" />
+    </state>
+    <state x="471" y="548" width="457" height="183" key="NewPhpFileDialog/0.31.1274.1117@0.31.1274.1117" timestamp="1597341869855" />
+    <state x="946" y="647" key="NewPhpFileDialog/0.31.2560.1331@0.31.2560.1331" timestamp="1597347506669" />
+  </component>
+</project>

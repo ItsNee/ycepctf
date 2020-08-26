@@ -1,0 +1,15 @@
+version: "3"
+services:
+        php:
+                build:
+                        context: .
+                networks:
+                        - php
+                volumes:
+                        - ./www/:/var/www/html
+                ports:
+                        - "30011:80"
+                container_name: php
+networks:        
+        php:
+

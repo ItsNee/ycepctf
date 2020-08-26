@@ -1,0 +1,46 @@
+version: "3"
+services:
+        php:
+                build:
+                        context: .
+                networks:
+                        - front
+                        - back
+                environment:
+                        - MYSQL_HOST=mysql
+                        - MYSQL_USER=user
+                        - MYSQL_PASSWORD=letmeinpls
+                        - MYSQL_DB=db
+                volumes:
+                        - ./www/:/var/www/html
+                ports:
+                        - "30001:80"
+                container_name: php-app
+        database:
+                container_name: mysql
+                image: mysql:5.7
+                networks:
+                        - back
+                environment:
+                        - MYSQL_ROOT_PASSWORD=rootpass
+                        - MYSQL_USER=user
+                        - MYSQL_PASSWORD=letmeinpls
+                        - MYSQL_DATABASE=db
+        phpmyadmin:
+                image: phpmyadmin/phpmyadmin:4.7
+                depends_on:
+                        - database
+                networks:
+                        - back
+                ports:
+                        - "30002:80"
+                environment:
+                        - PMA_HOST=mysql
+                        - PMA_PORT= 3306
+                volumes:
+                        - /sessions
+                container_name: phpadmin
+networks:
+        front:
+        back:
+

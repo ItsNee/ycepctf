@@ -1,0 +1,15 @@
+version: "3"
+services:
+        php:
+                build:
+                        context: .
+                networks:
+                        - adad
+                volumes:
+                        - ./www/:/var/www/html
+                ports:
+                        - "33321:80"
+                container_name: AdminHijinx
+networks:        
+        adad:
+

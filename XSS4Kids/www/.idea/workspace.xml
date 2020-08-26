@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="22a86b5c-6fd5-408b-aba8-a90e2d85db33" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1g3Of3bXACFD0MxlJjJsAGIx9aK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22a86b5c-6fd5-408b-aba8-a90e2d85db33" name="Default Changelist" comment="" />
+      <created>1597339914143</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597339914143</updated>
+      <workItem from="1597339914329" duration="7920000" />
+      <workItem from="1597356490919" duration="22000" />
+      <workItem from="1597402841852" duration="6614000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="856" y="124" width="832" height="942" key="#PHP" timestamp="1597403394256">
+      <screen x="0" y="31" width="2554" height="1128" />
+    </state>
+    <state x="856" y="124" width="832" height="942" key="#PHP/0.31.2554.1128@0.31.2554.1128" timestamp="1597403394256" />
+    <state x="931" y="296" width="800" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597403450839">
+      <screen x="0" y="31" width="2554" height="1128" />
+    </state>
+    <state x="464" y="293" width="800" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.31.1274.1117@0.31.1274.1117" timestamp="1597340849055" />
+    <state x="931" y="296" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.31.2554.1128@0.31.2554.1128" timestamp="1597403450839" />
+    <state x="932" y="297" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.31.2558.1132@0.31.2558.1132" timestamp="1597343303000" />
+    <state x="1002" y="233" width="530" height="723" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1597403373599">
+      <screen x="0" y="31" width="2554" height="1128" />
+    </state>
+    <state x="1002" y="233" width="530" height="723" key="#com.intellij.ide.macro.MacrosDialog/0.31.2554.1128@0.31.2554.1128" timestamp="1597403373599" />
+    <state x="846" y="318" width="852" height="597" key="EditFileWatcherDialog" timestamp="1597403483052">
+      <screen x="0" y="31" width="2554" height="1128" />
+    </state>
+    <state x="846" y="318" width="852" height="597" key="EditFileWatcherDialog/0.31.2554.1128@0.31.2554.1128" timestamp="1597403483052" />
+    <state x="944" y="553" width="456" height="183" key="NewPhpFileDialog" timestamp="1597407343867">
+      <screen x="0" y="31" width="2554" height="1128" />
+    </state>
+    <state x="471" y="548" width="457" height="183" key="NewPhpFileDialog/0.31.1274.1117@0.31.1274.1117" timestamp="1597341869855" />
+    <state x="944" y="553" width="456" height="183" key="NewPhpFileDialog/0.31.2554.1128@0.31.2554.1128" timestamp="1597407343867" />
+    <state x="946" y="647" key="NewPhpFileDialog/0.31.2560.1331@0.31.2560.1331" timestamp="1597347506669" />
+    <state x="649" y="142" key="SettingsEditor" timestamp="1597403484427">
+      <screen x="0" y="31" width="2554" height="1128" />
+    </state>
+    <state x="649" y="142" key="SettingsEditor/0.31.2554.1128@0.31.2554.1128" timestamp="1597403484427" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/datapross.php</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

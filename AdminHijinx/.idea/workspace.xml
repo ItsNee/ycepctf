@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36c8e07b-62dd-43bc-9093-1f14d3a6ccf1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Sass File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1g6Ua7YpYZ0UEUCinOy22KrFn3M" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36c8e07b-62dd-43bc-9093-1f14d3a6ccf1" name="Default Changelist" comment="" />
+      <created>1597434595623</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597434595623</updated>
+      <workItem from="1597434596751" duration="7715000" />
+      <workItem from="1597568891099" duration="4942000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="846" y="302" width="852" height="857" key="EditFileWatcherDialog" timestamp="1597569928881">
+      <screen x="0" y="31" width="2554" height="1128" />
+    </state>
+    <state x="846" y="302" width="852" height="857" key="EditFileWatcherDialog/0.31.2554.1128@0.31.2554.1128" timestamp="1597569928881" />
+    <state x="1043" y="503" width="457" height="183" key="NewPhpFileDialog" timestamp="1597435408948">
+      <screen x="0" y="31" width="2554" height="1128" />
+    </state>
+    <state x="1043" y="503" width="457" height="183" key="NewPhpFileDialog/0.31.2554.1128@0.31.2554.1128" timestamp="1597435408948" />
+    <state x="649" y="142" key="SettingsEditor" timestamp="1597569923256">
+      <screen x="0" y="31" width="2554" height="1128" />
+    </state>
+    <state x="649" y="142" key="SettingsEditor/0.31.2554.1128@0.31.2554.1128" timestamp="1597569923256" />
+  </component>
+</project>

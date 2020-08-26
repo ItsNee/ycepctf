@@ -1,0 +1,17 @@
+version: "3"
+services:
+        php:
+                build:
+                        context: .
+                networks:
+                        - pewpew
+                volumes:
+                        - ./www/:/var/www/html
+                        - ./www/uploads:/var/www/html/tmp
+                        - ./config/custom.ini:/usr/local/etc/php/conf.d/custom.ini
+                ports:
+                        - "30234:80"
+                container_name: PhpPythonExec
+networks:        
+        pewpew:
+
