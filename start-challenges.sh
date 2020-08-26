@@ -112,6 +112,25 @@ cd ../
 
 
 ##LEAVE THIS AT THE BOTTOM! PLACE YOUR CONFIG ON TOP OF THIS PLZZZZZZZZZ ~NEE <3
+
+#Hrithie (FTP)
+command=$(apt-get remove vsftpd -y)
+command=$(apt-get install vsftpd)
+echo "latest version of vsftpd installed"
+sed -i 's/anonymous_enable=NO/anonymous_enable=YES/g' /etc/vsftpd.conf
+command=$(echo 'anon_root=/home/lol' >> /etc/vsftpd.conf)
+echo "vsftpd file configured"
+cd /
+cd ./home
+command=$(mkdir lol)
+cd ./lol
+command=$(touch flag.txt)
+command=$(echo 'flag{dwarf}' >> flag.txt)
+command=$(systemctl start vsftpd)
+command=$(systemctl enable vsftpd)
+echo "vsftpd is enabled on boot"
+echo "fly to pluto is up now!"
+
 #CTFD
 cd /root/CTFd
 pwd

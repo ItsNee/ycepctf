@@ -113,6 +113,12 @@ cd ../
 
 
 ##LEAVE THIS AT THE BOTTOM! PLACE YOUR CONFIG ON TOP OF THIS PLZZZZZZZZZ ~NEE <3
+
+#Hrithie (FTP)
+command=$(apt-get remove vsftpd -y)
+command=$(rm -rf /home/lol/)
+echo "fly to pluto has now been stopped!"
+
 #CTFD
 cd /root/CTFd
 pwd
