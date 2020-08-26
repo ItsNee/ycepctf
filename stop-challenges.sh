@@ -4,7 +4,7 @@
 cd ./netcatintome
 pwd
 command=$(docker-compose down)
-echo "netcatintome has now been stopped!"
+echo "Netcat Into Me has now been stopped!"
 cd ../
 
 
@@ -12,28 +12,28 @@ cd ../
 cd ./injectme
 pwd
 command=$(docker-compose down)
-echo "injectme has now been stopped!"
+echo "Inject Me has now been stopped!"
 cd ../
 
 
 cd ./safensound
 pwd
 command=$(docker-compose down)
-echo "safensound has now been stopped!"
+echo "Safe n Sound has now been stopped!"
 cd ../
 
 
 cd ./supersecurelogin
 pwd
 command=$(docker-compose down)
-echo "supersecurelogin has now been stopped!"
+echo "Super Secure Login has now been stopped!"
 cd ../
 
 
 cd ./xorhunt
 pwd
 command=$(docker-compose down)
-echo "xorhunt has now been stopped!"
+echo "XOR Hunt has now been stopped!"
 cd ../
 
 
@@ -76,7 +76,7 @@ cd ../
 cd ./PythonEscape
 pwd
 command=$(docker-compose down)
-echo "PythonEscape has now been stopped!"
+echo "PythonEscape is has now been stopped!"
 cd ../
 
 cd ./SniffSniff
@@ -95,7 +95,7 @@ cd ../
 cd ./XSS4Kids
 pwd
 command=$(docker-compose down)
-echo "XSS4Kids is has now been stopped!"
+echo "XSS4Kids has now been stopped!"
 cd ../
 
 

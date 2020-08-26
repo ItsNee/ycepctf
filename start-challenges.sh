@@ -5,7 +5,7 @@
 cd ./netcatintome
 pwd
 command=$(docker-compose up -d)
-echo "netcatintome is up now!"
+echo "Netcat Into Me is up now!"
 cd ../
 
 
@@ -13,28 +13,28 @@ cd ../
 cd ./injectme
 pwd
 command=$(docker-compose up -d)
-echo "injectme is up now!"
+echo "Inject Me is up now!"
 cd ../
 
 
 cd ./safensound
 pwd
 command=$(docker-compose up -d)
-echo "safensound is up now!"
+echo "Safe n Sound is up now!"
 cd ../
 
 
 cd ./supersecurelogin
 pwd
 command=$(docker-compose up -d)
-echo "supersecurelogin is up now!"
+echo "Super Secure Login is up now!"
 cd ../
 
 
 cd ./xorhunt
 pwd
 command=$(docker-compose up -d)
-echo "xorhunt is up now!"
+echo "XOR Hunt is up now!"
 cd ../
 
 
@@ -114,12 +114,12 @@ cd ../
 ##LEAVE THIS AT THE BOTTOM! PLACE YOUR CONFIG ON TOP OF THIS PLZZZZZZZZZ ~NEE <3
 
 #Hrithie (FTP)
+#!/bin/bash
+
 command=$(apt-get remove vsftpd -y)
 command=$(apt-get install vsftpd)
-echo "latest version of vsftpd installed"
 sed -i 's/anonymous_enable=NO/anonymous_enable=YES/g' /etc/vsftpd.conf
 command=$(echo 'anon_root=/home/lol' >> /etc/vsftpd.conf)
-echo "vsftpd file configured"
 cd /
 cd ./home
 command=$(mkdir lol)
@@ -128,8 +128,9 @@ command=$(touch flag.txt)
 command=$(echo 'flag{dwarf}' >> flag.txt)
 command=$(systemctl start vsftpd)
 command=$(systemctl enable vsftpd)
-echo "vsftpd is enabled on boot"
 echo "Fly To Pluto is up now!"
+
+
 
 #CTFD
 cd /root/CTFd
