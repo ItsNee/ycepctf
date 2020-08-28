@@ -100,6 +100,12 @@ echo "XSS4Kids is up now!"
 cd ../
 
 
+#Gwen
+command=$(cp -r ./FreeFlag /var/www/html)
+echo "Free Flag is up now!"
+
+command=$(cp -r ./WhereIsMyKey /var/www/html)
+echo "Where is my Key is up now!"
 
 
 
@@ -130,6 +136,16 @@ command=$(systemctl start vsftpd)
 command=$(systemctl enable vsftpd)
 echo "Fly To Pluto is up now!"
 
+
+#Gwen (Nginx)
+#!/bin/bash
+
+apt-get install nginx -y
+sed -i 's/80 default_server;/8080 default_server;/g' /etc/nginx/sites-enabled/default
+sed -i 's/[::]:80 default_server;/[::]:8080 default_server;/g' /etc/nginx/sites-enabled/default
+systemctl restart nginx
+systemctl enable nginx
+echo "Nginx Installed"
 
 
 #CTFD
