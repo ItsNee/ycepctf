@@ -1,0 +1,13 @@
+[Unit]
+Description=ycepctfstop
+Before=shutdown.target reboot.target
+
+[Service]
+WorkingDirectory= /home/ycep-ctf/Desktop/Challenges/
+Type=oneshot
+ExecStart=/bin/true
+ExecStop=/home/ycep-ctf/Desktop/Challenges/stop-challenges.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
