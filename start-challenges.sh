@@ -99,13 +99,24 @@ command=$(docker-compose up -d)
 echo "XSS4Kids is up now!"
 cd ../
 
+cd ./WhereIsMyKey
+pwd
+command=$(docker-compose up -d)
+echo "WhereIsMyKey is up now!"
+cd ../
+
+cd ./FreeFlag
+pwd
+command=$(docker-compose up -d)
+echo "FreeFlag is up now!"
+cd ../
 
 #Gwen
-command=$(cp -r ./FreeFlag /var/www/html)
-echo "Free Flag is up now!"
+# command=$(cp -r ./FreeFlag /var/www/html)
+# echo "Free Flag is up now!"
 
-command=$(cp -r ./WhereIsMyKey /var/www/html)
-echo "Where is my Key is up now!"
+# command=$(cp -r ./WhereIsMyKey /var/www/html)
+# echo "Where is my Key is up now!"
 
 
 
@@ -140,12 +151,12 @@ echo "Fly To Pluto is up now!"
 #Gwen (Nginx)
 #!/bin/bash
 
-apt-get install nginx -y
-sed -i 's/80 default_server;/8080 default_server;/g' /etc/nginx/sites-enabled/default
-sed -i 's/[::]:80 default_server;/[::]:8080 default_server;/g' /etc/nginx/sites-enabled/default
-systemctl restart nginx
-systemctl enable nginx
-echo "Nginx Installed"
+# apt-get install nginx -y
+# sed -i 's/80 default_server;/8080 default_server;/g' /etc/nginx/sites-enabled/default
+# sed -i 's/[::]:80 default_server;/[::]:8080 default_server;/g' /etc/nginx/sites-enabled/default
+# systemctl restart nginx
+# systemctl enable nginx
+# echo "Nginx Installed"
 
 
 #CTFD

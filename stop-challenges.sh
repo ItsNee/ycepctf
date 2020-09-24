@@ -99,10 +99,17 @@ echo "XSS4Kids has now been stopped!"
 cd ../
 
 
+cd ./WhereIsMyKey
+pwd
+command=$(docker-compose down)
+echo "WhereIsMyKey has now been stopped!"
+cd ../
 
-
-
-
+cd ./FreeFlag
+pwd
+command=$(docker-compose down)
+echo "FreeFlag has now been stopped!"
+cd ../
 
 
 
@@ -122,18 +129,18 @@ echo "Fly To Pluto has now been stopped!"
 
 #Gwen (Nginx)
 #!/bin/bash
-sudo systemctl disable nginx
-sudo systemctl stop nginx
-sudo apt-get remove nginx -y
-sudo apt-get purge nginx nginx-common -y
-sudo rm -rf /etc/nginx/sites-enabled/default
-echo "Nginx has been stopped!"
+# sudo systemctl disable nginx
+# sudo systemctl stop nginx
+# sudo apt-get remove nginx -y
+# sudo apt-get purge nginx nginx-common -y
+# sudo rm -rf /etc/nginx/sites-enabled/default
+# echo "Nginx has been stopped!"
 
-command=$(rm -rf /var/www/html/FreeFlag)
-echo "Free Flag has been stopped!"
+# command=$(rm -rf /var/www/html/FreeFlag)
+# echo "Free Flag has been stopped!"
 
-command=$(rm -rf /var/www/html/WhereIsMyKey)
-echo "Where is my Key has been stopped!"
+# command=$(rm -rf /var/www/html/WhereIsMyKey)
+# echo "Where is my Key has been stopped!"
 
 
 #CTFD

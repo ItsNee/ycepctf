@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+ web:
+  container_name: freeflag
+  image: nginx
+  ports:
+   - "1285:80"
+  volumes:
+   - ./source:/usr/share/nginx/html
+
