@@ -73,7 +73,7 @@ command=$(docker-compose down)
 echo "FastCash18Up has now been stopped!"
 cd ../
 
-cd ./PythonEscape
+cd ./pythonEscape
 pwd
 command=$(docker-compose down)
 echo "PythonEscape is has now been stopped!"
@@ -85,7 +85,7 @@ command=$(docker-compose down)
 echo "SniffSniff has now been stopped!"
 cd ../
 
-cd ./SocialEngineering101
+cd ./socialEngineering101
 pwd
 command=$(docker-compose down)
 echo "SocialEngineering101 has now been stopped!"
