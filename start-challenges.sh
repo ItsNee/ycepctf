@@ -80,7 +80,7 @@ command=$(docker-compose up -d)
 echo "PythonEscape is up now!"
 cd ../
 
-cd ./sniffSniff
+cd ./SniffSniff
 pwd
 command=$(docker-compose up -d)
 echo "SniffSniff is up now!"
@@ -93,19 +93,19 @@ echo "SocialEngineering101 is up now!"
 cd ../
 
 
-cd ./xss4Kids
+cd ./XSS4Kids
 pwd
 command=$(docker-compose up -d)
 echo "XSS4Kids is up now!"
 cd ../
 
-cd ./whereIsMyKey
+cd ./WhereIsMyKey
 pwd
 command=$(docker-compose up -d)
 echo "WhereIsMyKey is up now!"
 cd ../
 
-cd ./freeFlag
+cd ./FreeFlag
 pwd
 command=$(docker-compose up -d)
 echo "FreeFlag is up now!"

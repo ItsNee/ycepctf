@@ -17,7 +17,7 @@ docker-compose up -d
 echo " "
 echo "SETTING UP YCEP CTF CHALLENGES!"
 echo " "
-sudo cd /root/
+cd ../
 git clone https://github.com/ItsNee/ycepctf.git
 echo " "
 echo "SETTING UP SYSTEMD FOR YCEP CTF!"
@@ -35,7 +35,7 @@ chmod 777 restart-challenges.sh
 echo " "
 echo "STARTING CHALLENGES!"
 echo " "
-./restart-challenges.sh
+./start-challenges.sh
 echo " "
 echo "YCEP CTF HAS NOW BEEN SETUP!"
 echo "VISIT PORT 80 AND PROFFFFITT??"
