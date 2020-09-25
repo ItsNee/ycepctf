@@ -2,7 +2,7 @@ version: '3'
 
 services:
  web:
-  container_name: freeflag
+  container_name: whereismykey
   image: nginx
   ports:
    - "1285:80"

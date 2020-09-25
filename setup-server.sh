@@ -12,12 +12,12 @@ echo " "
 echo "SETTING UP CTFd!"
 echo " "
 git clone https://github.com/CTFd/CTFd.git
-cd CTFd
-docker-compose up -d 
+# cd CTFd
+# docker-compose up -d 
 echo " "
 echo "SETTING UP YCEP CTF CHALLENGES!"
 echo " "
-cd ../
+# cd ../
 git clone https://github.com/ItsNee/ycepctf.git
 echo " "
 echo "SETTING UP SYSTEMD FOR YCEP CTF!"
