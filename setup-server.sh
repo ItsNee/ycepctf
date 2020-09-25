@@ -4,20 +4,16 @@
 #Hi if this breaks..... Discord:Nee#9999
 #
 echo " "
+echo "PLEASE MAKE SURE U ARE ROOOOOT!"
+echo " "
+echo " "
 echo "INSTALLING DOCKER, DOCKER-COMPOSE and GIT!"
 echo " "
-sudo apt install docker.io docker-compose git -y
-sudo cd /root/
-echo " "
-echo "SETTING UP CTFd!"
-echo " "
-git clone https://github.com/CTFd/CTFd.git
-# cd CTFd
-# docker-compose up -d 
+apt install docker.io docker-compose git -y
 echo " "
 echo "SETTING UP YCEP CTF CHALLENGES!"
 echo " "
-# cd ../
+cd /root/
 git clone https://github.com/ItsNee/ycepctf.git
 echo " "
 echo "SETTING UP SYSTEMD FOR YCEP CTF!"
@@ -36,10 +32,14 @@ echo " "
 echo "STARTING CHALLENGES!"
 echo " "
 ./start-challenges.sh
+cd /root/
 echo " "
-echo "YCEP CTF HAS NOW BEEN SETUP!"
-echo "VISIT PORT 80 AND PROFFFFITT??"
+echo "SETTING UP CTFd!"
 echo " "
-
-
-
+git clone https://github.com/CTFd/CTFd.git
+cd CTFd
+docker-compose up -d 
+# echo " "
+# echo "YCEP CTF HAS NOW BEEN SETUP!"
+# echo "VISIT PORT 80 AND PROFFFFITT??"
+# echo " "
