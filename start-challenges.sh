@@ -74,7 +74,7 @@ command=$(docker-compose up -d)
 echo "FastCash18Up is up now!"
 cd ../
 
-cd ./PythonEscape
+cd ./pythonEscape
 pwd
 command=$(docker-compose up -d)
 echo "PythonEscape is up now!"
@@ -86,7 +86,7 @@ command=$(docker-compose up -d)
 echo "SniffSniff is up now!"
 cd ../
 
-cd ./SocialEngineering101
+cd ./socialEngineering101
 pwd
 command=$(docker-compose up -d)
 echo "SocialEngineering101 is up now!"
@@ -99,13 +99,13 @@ command=$(docker-compose up -d)
 echo "XSS4Kids is up now!"
 cd ../
 
-cd ./WhereIsMyKey
+cd ./whereIsMyKey
 pwd
 command=$(docker-compose up -d)
 echo "WhereIsMyKey is up now!"
 cd ../
 
-cd ./FreeFlag
+cd ./freeFlag
 pwd
 command=$(docker-compose up -d)
 echo "FreeFlag is up now!"
@@ -133,19 +133,19 @@ cd ../
 #Hrithie (FTP)
 #!/bin/bash
 
-command=$(apt-get remove vsftpd -y)
-command=$(apt-get install vsftpd)
-sed -i 's/anonymous_enable=NO/anonymous_enable=YES/g' /etc/vsftpd.conf
-command=$(echo 'anon_root=/home/lol' >> /etc/vsftpd.conf)
-cd /
-cd ./home
-command=$(mkdir lol)
-cd ./lol
-command=$(touch flag.txt)
-command=$(echo 'flag{dwarf}' >> flag.txt)
-command=$(systemctl start vsftpd)
-command=$(systemctl enable vsftpd)
-echo "Fly To Pluto is up now!"
+# command=$(apt-get remove vsftpd -y)
+# command=$(apt-get install vsftpd)
+# sed -i 's/anonymous_enable=NO/anonymous_enable=YES/g' /etc/vsftpd.conf
+# command=$(echo 'anon_root=/home/lol' >> /etc/vsftpd.conf)
+# cd /
+# cd ./home
+# command=$(mkdir lol)
+# cd ./lol
+# command=$(touch flag.txt)
+# command=$(echo 'flag{dwarf}' >> flag.txt)
+# command=$(systemctl start vsftpd)
+# command=$(systemctl enable vsftpd)
+# echo "Fly To Pluto is up now!"
 
 
 #Gwen (Nginx)
